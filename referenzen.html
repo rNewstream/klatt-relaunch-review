@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Referenzen — HÖRMANN Klatt Conveyors</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+</head>
+<body>
+<script src="partials.js"></script>
+<script>renderHeader("referenzen");</script>
+<nav class="crumb"><div class="container"><a href="index.html">Start</a><i class="ph ph-caret-right"></i><span>Referenzen</span></div></nav>
+
+<section class="sub-hero" data-screen-label="Hero">
+  <div class="sh-wrap">
+  <div class="sh-media">
+    <div class="sh-ph-label"><span class="ph-pill">Bild-Platzhalter</span> <span style="font-size:11px;color:rgba(255,255,255,.45)">Referenzen — Projekte, die für sich sprechen.</span></div>
+  </div>
+  <div class="sh-layer">
+    <span class="eyebrow">Referenzen</span>
+    <h1>Projekte, die für sich sprechen.</h1>
+    <p>Seit 1999 realisieren wir Fördertechnik für Unternehmen weltweit — von Flughäfen in Zürich und Stuttgart bis zu Krankenhäusern in Klagenfurt und Elektrogroßhändlern in Österreich.</p>
+  </div>
+  </div>
+</section>
+
+<div class="filterbar" data-screen-label="Filter">
+  <div class="container">
+    <div class="row">
+      <label>Branche</label>
+      <select onchange="filterRefs(this.value,'branche')">
+        <option value="">Alle Branchen</option>
+        <option>Flughafen</option>
+        <option>Krankenhaus</option>
+        <option>Handel</option>
+        <option>Industrie</option>
+        <option>Lebensmittel</option>
+        <option>Pharma</option>
+        <option>Post &amp; Paket</option>
+        <option>Holzindustrie</option>
+        <option>Sonderförderanlagen</option>
+      </select>
+      <label>Anlagenart</label>
+      <select onchange="filterRefs(this.value,'anlage')">
+        <option value="">Alle Anlagen</option>
+        <option>Gepäckförderanlage</option>
+        <option>Containerförderanlage</option>
+        <option>Palettenförderanlage</option>
+        <option>Behälterförderanlage</option>
+        <option>Sonderförderanlage</option>
+      </select>
+      <a href="#" class="clear" onclick="clearFilter();return false;">Filter zurücksetzen</a>
+    </div>
+  </div>
+</div>
+
+<section class="sec" data-screen-label="Referenzen-Grid">
+  <div class="container">
+    <div class="grid-3" id="refs-grid">
+
+      <a href="referenzen-flughafen-stuttgart.html" class="ref-card" data-branche="Flughafen" data-anlage="Gepäckförderanlage">
+        <div class="imgph imgph-16x9"><div class="meta"><i class="ph ph-image"></i><span class="lab">Bild-Platzhalter</span><span class="desc">Flughafen Stuttgart — Gepäckverteiler Terminal 1 &amp; 2</span></div></div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Flughafen</span><span class="tag">Gepäckförderanlage</span></div>
+          <h3>Flughafen Stuttgart — Umbau Gepäckverteiler</h3>
+          <p>Gurtförderanlage ca. 700 lfm, Stahlbau 100 t inkl. 1.500 m²-Bühne von der Decke abgehängt. SAP-Materialflussrechner und Lagerverwaltungsrechner.</p>
+          <span class="more">Referenz lesen →</span>
+        </div>
+      </a>
+
+      <a href="referenzen-zurich-airport.html" class="ref-card" data-branche="Flughafen" data-anlage="Gepäckförderanlage">
+        <div class="imgph imgph-16x9"><div class="meta"><i class="ph ph-image"></i><span class="lab">Bild-Platzhalter</span><span class="desc">Flughafen Zürich — Check-In-Terminal</span></div></div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Flughafen</span><span class="tag">Gepäckförderanlage</span></div>
+          <h3>Zurich Airport — 104 neue Check-In-Terminals</h3>
+          <p>4 Jahre Projektlaufzeit (2011–2015). 26 bestehende Terminals demontiert, 104 neue Check-In-Terminals inklusive Sammel- und Förderbänder realisiert.</p>
+          <span class="more">Referenz lesen →</span>
+        </div>
+      </a>
+
+      <a href="referenzen-lkh-klagenfurt.html" class="ref-card" data-branche="Krankenhaus" data-anlage="Containerförderanlage">
+        <div class="imgph imgph-16x9">
+          <img src="../assets/img/referenz-lkh-klagenfurt-header.webp" alt="LKH Klagenfurt" style="width:100%;height:100%;object-fit:cover">
+        </div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Krankenhaus</span><span class="tag">Containerförderanlage</span></div>
+          <h3>LKH Klagenfurt — Automatische Krankenhauslogistik</h3>
+          <p>750 Rollcontainer, 61 fahrerlose Transportsysteme, 14 km Streckennetz unterirdisch. Anbindung Zentralküche, Wäscherei, alle Stationen.</p>
+          <span class="more">Referenz lesen →</span>
+        </div>
+      </a>
+
+      <a href="referenzen-limmert.html" class="ref-card" data-branche="Handel" data-anlage="Behälterförderanlage">
+        <div class="imgph imgph-16x9"><div class="meta"><i class="ph ph-image"></i><span class="lab">Bild-Platzhalter</span><span class="desc">Gebr. Limmert — Elektrogroßhandel, etagenübergreifende Fördertechnik</span></div></div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Handel</span><span class="tag">Behälterförderanlage</span></div>
+          <h3>Gebr. Limmert — Etagenübergreifende Fördertechnik</h3>
+          <p>Erweiterung Behälterfördertechnik mit etagenübergreifender Anlage. Zentrale SPS-Steuerung mit Anbindung an neues Lagerleitsystem. Partnerschaft seit 2008.</p>
+          <span class="more">Referenz lesen →</span>
+        </div>
+      </a>
+
+      <div class="ref-card" data-branche="Industrie" data-anlage="Palettenförderanlage">
+        <div class="imgph imgph-16x9"><div class="meta"><i class="ph ph-image"></i><span class="lab">Bild-Platzhalter</span><span class="desc">Biohort GmbH — Modernste Feinblechverarbeitungsanlage Österreichs</span></div></div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Industrie</span><span class="tag">Palettenförderanlage</span></div>
+          <h3>Biohort GmbH — Modernste Feinblechverarbeitungsanlage</h3>
+          <p>Förderanlage über zwei Etagen, Fördereinheiten bis 3.450 × 1.300 mm / 1.200 kg. In Kooperation mit HÖRMANN LOGISTIK GmbH als Generalunternehmer.</p>
+        </div>
+      </div>
+
+      <div class="ref-card" data-branche="Industrie" data-anlage="Palettenförderanlage">
+        <div class="imgph imgph-16x9"><div class="meta"><i class="ph ph-image"></i><span class="lab">Bild-Platzhalter</span><span class="desc">Hawle Armaturen — Hochregallager Frankenmarkt</span></div></div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Industrie</span><span class="tag">Palettenförderanlage</span></div>
+          <h3>E. Hawle Armaturen — Automatisiertes Hochregallager</h3>
+          <p>3 Geschosse, 10 m Gerüstschachtheber, 5 unabhängige Gassen, 8 Arbeitsplätze. Paletten bis 1.200 kg, Edelstahlausführung für Außenbereich.</p>
+        </div>
+      </div>
+
+      <div class="ref-card" data-branche="Lebensmittel" data-anlage="Palettenförderanlage">
+        <div class="imgph imgph-16x9"><div class="meta"><i class="ph ph-image"></i><span class="lab">Bild-Platzhalter</span><span class="desc">Berglandmilch Aschbach</span></div></div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Lebensmittel</span><span class="tag">Palettenförderanlage</span></div>
+          <h3>Berglandmilch Aschbach — Erweiterung Hochregallager</h3>
+          <p>Erweiterung bestehendes Hochregallager um 5 Gassen + komplette Fördertechnik: Rollenförderer, Drehtische, Kettenumsetzer, Querverfahrwagen, Gerüstschachtheber.</p>
+        </div>
+      </div>
+
+      <div class="ref-card" data-branche="Handel" data-anlage="Behälterförderanlage">
+        <div class="imgph imgph-16x9"><div class="meta"><i class="ph ph-image"></i><span class="lab">Bild-Platzhalter</span><span class="desc">Faie — Behälterfördertechnik Regau</span></div></div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Handel</span><span class="tag">Behälterförderanlage</span></div>
+          <h3>Faie — Automatische Behälterzuführung</h3>
+          <p>Erweiterung Behälterfördertechnik + automatische Behälterzuführung. Steiggurtförderer über der Behälterzuführung, Staurollenförderer für unterschiedliche Kartonabmessungen.</p>
+        </div>
+      </div>
+
+      <div class="ref-card" data-branche="Sonderförderanlagen" data-anlage="Sonderförderanlage">
+        <div class="imgph imgph-16x9"><div class="meta"><i class="ph ph-image"></i><span class="lab">Bild-Platzhalter</span><span class="desc">Banner Batterien — Paletten- und Modulbandfördertechnik</span></div></div>
+        <div class="body">
+          <div class="tagrow"><span class="tag">Sonderförderanlagen</span><span class="tag">Palettenförderanlage</span></div>
+          <h3>Banner Batterien — Paletten- und Modulbandfördertechnik</h3>
+          <p>Erweiterung bestehende Palettenfördertechnik + neue Modulbandfördertechnik zur Verkettung unterschiedlicher Produktionslinien für LKW-Batterien.</p>
+        </div>
+      </div>
+
+    </div>
+    <div class="ph-block" style="margin-top:32px">Weitere Referenzen: Linz Textil, Post Frankreich, Takeda Pharma, Mayr Melnhof Leoben — Texte ausstehend</div>
+  </div>
+</section>
+
+<section class="ctabar" data-screen-label="CTA-Bar">
+  <div class="container">
+    <div class="row">
+      <div><h3>Ihr Projekt könnte das nächste sein.</h3><p>Sprechen Sie mit uns — wir schätzen realistisch ein, ob und wie wir helfen können.</p></div>
+      <div class="actions">
+        <a href="kontakt.html" class="btn btn-on-dark btn-lg">Ersteinschätzung anfragen →</a>
+        <a href="knowledge.html#buyers-guide" class="btn btn-outline-light">Buyers Guide herunterladen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+function filterRefs(val, type) {
+  document.querySelectorAll('#refs-grid .ref-card').forEach(c => {
+    if (!val) { c.style.display = ''; return; }
+    const match = c.dataset[type] && c.dataset[type].toLowerCase().includes(val.toLowerCase());
+    c.style.display = match ? '' : 'none';
+  });
+}
+function clearFilter() {
+  document.querySelectorAll('#refs-grid .ref-card').forEach(c => c.style.display = '');
+  document.querySelectorAll('.filterbar select').forEach(s => s.value = '');
+}
+</script>
+<script>renderFooter();</script>
+</body>
+</html>

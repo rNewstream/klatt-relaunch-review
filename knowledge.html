@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<title>Knowledge Center — HÖRMANN Klatt Conveyors</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/regular/style.css">
+<link rel="stylesheet" href="https://unpkg.com/@phosphor-icons/web@2.1.1/src/bold/style.css">
+</head>
+<body>
+<script src="partials.js"></script>
+<script>renderHeader("knowledge");</script>
+
+<!-- PAGE HEAD -->
+<section class="page-head" data-screen-label="01 Knowledge Head">
+  <div class="container">
+    <span class="eyebrow">Knowledge Center</span>
+    <h1 class="hk-h1">Die Fragen, die Sie wirklich beschäftigen.</h1>
+    <p class="lede" style="max-width:64ch">Ehrliche Antworten zu Kosten, Risiken und Entscheidungen — bevor Sie mit jemandem reden müssen. Praxiswissen aus 35 Jahren Fördertechnik, ohne Marketing-Lack.</p>
+  </div>
+</section>
+
+<!-- ========================= ARTIKEL-ÜBERSICHT (Blog) ========================= -->
+<section class="sec" data-screen-label="02 Artikel">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Artikel</span>
+        <h2 class="hk-h2">Alle Themen auf einen Blick.</h2>
+      </div>
+      <p class="lede">Wählen Sie nach Kategorie oder stöbern Sie durch alle Inhalte.</p>
+    </div>
+
+    <!-- Filter-Chips -->
+    <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px">
+      <button class="tag tag-ink" onclick="filterKC('all',this)" style="cursor:pointer;border:none;font-family:inherit">Alle</button>
+      <button class="tag tag-line" onclick="filterKC('kosten',this)" style="cursor:pointer;border:none;font-family:inherit">Kosten &amp; Preise</button>
+      <button class="tag tag-line" onclick="filterKC('probleme',this)" style="cursor:pointer;border:none;font-family:inherit">Probleme &amp; Risiken</button>
+      <button class="tag tag-line" onclick="filterKC('vergleiche',this)" style="cursor:pointer;border:none;font-family:inherit">Vergleiche</button>
+      <button class="tag tag-line" onclick="filterKC('best-practice',this)" style="cursor:pointer;border:none;font-family:inherit">Best Practice</button>
+      <button class="tag tag-line" onclick="filterKC('case-study',this)" style="cursor:pointer;border:none;font-family:inherit">Case Studies</button>
+    </div>
+
+    <div class="kc-grid-cards" id="kc-articles">
+
+      <article class="kc-card" data-cat="kosten">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-currency-eur" aria-hidden="true"></i></div>
+        <span class="kc-tag">Kosten &amp; Preise</span>
+        <h3>Was kostet eine Förderanlage wirklich?</h3>
+        <p>CAPEX, OPEX und TCO — die Kostentreiber, die in Angeboten selten auftauchen, aber über 10 Jahre das Budget bestimmen.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 14&nbsp;min</span><span><i class="ph ph-tag"></i> KLATT_001</span></div>
+        <a class="more" href="#">Artikel lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card" data-cat="probleme">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-warning" aria-hidden="true"></i></div>
+        <span class="kc-tag">Probleme &amp; Risiken</span>
+        <h3>Die 7 häufigsten Planungsfehler bei Förderanlagen.</h3>
+        <p>Warum Projekte teurer werden als geplant — und welche Fehler sich zuverlässig vermeiden lassen.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 11&nbsp;min</span><span><i class="ph ph-tag"></i> KLATT_015</span></div>
+        <a class="more" href="#">Artikel lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card" data-cat="vergleiche">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-arrows-left-right" aria-hidden="true"></i></div>
+        <span class="kc-tag">Vergleiche</span>
+        <h3>Zahnriemen statt Stahlketten — was das wirklich bringt.</h3>
+        <p>Wartungsaufwand, Geräuschpegel, Lebensdauer: ein ehrlicher Vergleich ohne Hersteller-Marketing.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 9&nbsp;min</span><span><i class="ph ph-tag"></i> KLATT_006</span></div>
+        <a class="more" href="#">Artikel lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card" data-cat="vergleiche">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-arrows-clockwise" aria-hidden="true"></i></div>
+        <span class="kc-tag">Vergleiche</span>
+        <h3>Retrofit oder Neuanlage? Eine Entscheidungsheuristik.</h3>
+        <p>Wann sich die Modernisierung lohnt — und wann die Neuanlage günstiger ist. Mit TCO-Beispiel.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 12&nbsp;min</span><span><i class="ph ph-tag"></i> KLATT_011</span></div>
+        <a class="more" href="#">Artikel lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card" data-cat="probleme">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-x-circle" aria-hidden="true"></i></div>
+        <span class="kc-tag">Probleme &amp; Risiken</span>
+        <h3>Warum Förderanlagen ausfallen — und was dagegen hilft.</h3>
+        <p>Die häufigsten Ursachen ungeplanter Stillstände und wie Wartungskonzepte die MTBF verlängern.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 10&nbsp;min</span><span><i class="ph ph-tag"></i> KLATT_024</span></div>
+        <a class="more" href="#">Artikel lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card" data-cat="best-practice">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-check-circle" aria-hidden="true"></i></div>
+        <span class="kc-tag">Best Practice</span>
+        <h3>Beste Praxis bei Fördertechnik-Projekten.</h3>
+        <p>Pflichtenheft, Abnahme, Schnittstellen — was erfolgreiche Projekte von problematischen unterscheidet.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 13&nbsp;min</span><span><i class="ph ph-tag"></i> KLATT_023</span></div>
+        <a class="more" href="#">Artikel lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card" data-cat="kosten">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-clock" aria-hidden="true"></i></div>
+        <span class="kc-tag">Kosten &amp; Preise</span>
+        <h3>Lieferzeiten für Förderanlagen — was realistisch ist.</h3>
+        <p>Von der Anfrage bis zur Inbetriebnahme: typische Laufzeiten, häufige Verzögerungsursachen.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 7&nbsp;min</span><span><i class="ph ph-tag"></i> KLATT_005</span></div>
+        <a class="more" href="#">Artikel lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card" data-cat="case-study">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-buildings" aria-hidden="true"></i></div>
+        <span class="kc-tag">Case Study</span>
+        <h3>Limmert: Lagerlogistik-Umstellung im laufenden Betrieb.</h3>
+        <p>Wie ein Elektrogroßhändler seine etagenübergreifende Fördertechnik ohne Betriebsunterbrechung erneuert hat.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 8&nbsp;min</span><span><i class="ph ph-buildings"></i> Limmert GmbH</span></div>
+        <a class="more" href="referenzen-limmert.html">Case lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card" data-cat="vergleiche">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-shield-check" aria-hidden="true"></i></div>
+        <span class="kc-tag">Vergleiche</span>
+        <h3>Sicherheitsnormen und Abnahme: Was wirklich zählt.</h3>
+        <p>CE-Kennzeichnung, Maschinenrichtlinie, FAT/SAT — die Punkte, an denen Projekte in letzter Minute scheitern.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 10&nbsp;min</span><span><i class="ph ph-tag"></i> KLATT_017</span></div>
+        <a class="more" href="#">Artikel lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ========================= PRAXISLEITFADEN (prominent, kompakt) ========================= -->
+<section class="sec sec-gray" id="leitfaden" data-screen-label="03 Praxisleitfaden">
+  <div class="container">
+    <div style="display:grid;grid-template-columns:200px 1fr;gap:48px;align-items:center;background:#fff;border:1px solid var(--hk-line);padding:40px">
+
+      <!-- Cover -->
+      <div style="position:relative;background:linear-gradient(160deg,#1a1f26 0%,#2a2f36 70%,#0e1116 100%);aspect-ratio:1/1.41;display:flex;flex-direction:column;justify-content:space-between;padding:18px 16px 14px;overflow:hidden;flex-shrink:0">
+        <div style="position:absolute;inset:0;background:repeating-linear-gradient(115deg,rgba(0,0,0,.18) 0 1px,transparent 1px 42px),repeating-linear-gradient(25deg,rgba(255,255,255,.03) 0 1px,transparent 1px 80px);pointer-events:none"></div>
+        <div style="position:relative;z-index:1">
+          <div style="font-size:8px;letter-spacing:.18em;text-transform:uppercase;color:rgba(255,255,255,.5);margin-bottom:8px">KLATT_019</div>
+          <div style="background:var(--hk-red);padding:8px 10px;display:inline-block">
+            <div style="font-size:7px;letter-spacing:.14em;text-transform:uppercase;color:rgba(255,255,255,.85);font-weight:500">Der Praxisleitfaden</div>
+          </div>
+          <div style="font-size:12px;font-weight:600;line-height:1.2;letter-spacing:-0.018em;color:#fff;margin-top:10px">Fördertechnik-<br>Entscheidungen<br>fundiert treffen.</div>
+        </div>
+        <div style="position:relative;z-index:1;border-top:1px solid rgba(255,255,255,.12);padding-top:8px">
+          <img src="../assets/logo_hoermann_klatt_inverse.png" alt="HÖRMANN Klatt" style="height:16px;width:auto;display:block;margin-bottom:6px">
+          <div style="font-size:7px;color:rgba(255,255,255,.55);letter-spacing:.1em;text-transform:uppercase">11 Kapitel · ~6.400 Wörter</div>
+        </div>
+        <div style="position:absolute;left:0;bottom:0;right:0;height:4px;background:linear-gradient(90deg,var(--hk-red) 0 30%,#fff 30% 100%);z-index:2"></div>
+      </div>
+
+      <!-- Body -->
+      <div>
+        <span class="eyebrow">Praxisleitfaden · Kostenfrei</span>
+        <h2 style="font-size:clamp(22px,2.2vw,30px);font-weight:600;letter-spacing:-0.018em;margin:8px 0 14px">Der Leitfaden für Fördertechnik-Entscheidungen</h2>
+        <p style="font-size:15px;color:var(--hk-grey-75);font-weight:300;line-height:1.65;margin:0 0 20px;max-width:56ch">Was Anlagen wirklich kosten, welche Planungsfehler Sie vermeiden sollten, wie Sie Anbieter strukturiert bewerten. 11 Kapitel, Bewertungsmatrix, 8 kritische Fragen — aus 35 Jahren Projekterfahrung.</p>
+        <div style="display:flex;gap:12px;flex-wrap:wrap;align-items:center">
+          <a href="#leitfaden-form" class="btn btn-primary">Leitfaden herunterladen <i class="ph-bold ph-download-simple"></i></a>
+          <span style="font-size:13px;color:var(--hk-grey-75);font-weight:300">Kein Newsletter · kein Verkaufsanruf</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Compact download form -->
+    <div id="leitfaden-form" style="margin-top:16px;background:#fff;border:1px solid var(--hk-line);padding:28px 32px">
+      <div style="display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:14px;align-items:end">
+        <div>
+          <label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--hk-grey-75);font-weight:500;display:block;margin-bottom:6px">Vorname</label>
+          <input class="ph-input" type="text" placeholder="Max">
+        </div>
+        <div>
+          <label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--hk-grey-75);font-weight:500;display:block;margin-bottom:6px">Firma</label>
+          <input class="ph-input" type="text" placeholder="Musterfirma GmbH">
+        </div>
+        <div>
+          <label style="font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--hk-grey-75);font-weight:500;display:block;margin-bottom:6px">Geschäfts-E-Mail</label>
+          <input class="ph-input" type="email" placeholder="m.mustermann@firma.de">
+        </div>
+        <a href="../assets/klatt-praxisleitfaden-foerdertechnik.md" class="btn btn-primary" download style="white-space:nowrap"><i class="ph-bold ph-download-simple"></i> Herunterladen</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========================= WEITERE DOWNLOADS ========================= -->
+<section class="sec" data-screen-label="04 Weitere Downloads">
+  <div class="container">
+    <div class="sec-head">
+      <div>
+        <span class="eyebrow">Downloads</span>
+        <h2 class="hk-h2">Whitepaper, Briefings &amp; Checklisten.</h2>
+      </div>
+      <p class="lede">Kompakter als der Leitfaden — für spezifische Fragestellungen.</p>
+    </div>
+    <div class="kc-grid-cards">
+
+      <article class="kc-card">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-file-pdf" aria-hidden="true"></i></div>
+        <span class="kc-tag">Branchen-Briefing</span>
+        <h3>GMP-konforme Fördertechnik für die Pharma-Produktion.</h3>
+        <p>Reinraum-Anforderungen, Validierung, Dokumentation.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 18&nbsp;min</span><span><i class="ph ph-file"></i> 24 Seiten</span></div>
+        <a class="more" href="#">Briefing anfordern <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-file-pdf" aria-hidden="true"></i></div>
+        <span class="kc-tag">Whitepaper</span>
+        <h3>Retrofit als Investitionshebel — wann er sich rechnet.</h3>
+        <p>Entscheidungsmatrix mit fünf Praxisbeispielen.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 12&nbsp;min</span><span><i class="ph ph-file"></i> 16 Seiten</span></div>
+        <a class="more" href="#">Whitepaper laden <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-file-pdf" aria-hidden="true"></i></div>
+        <span class="kc-tag">Checkliste</span>
+        <h3>Pflichtenheft-Checkliste Fördertechnik.</h3>
+        <p>21 Punkte, druckbar, ein Blatt, sofort einsetzbar.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 4&nbsp;min</span><span><i class="ph ph-file"></i> 1 Seite</span></div>
+        <a class="more" href="#">Checkliste laden <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-file-pdf" aria-hidden="true"></i></div>
+        <span class="kc-tag">Whitepaper</span>
+        <h3>TCO-Modell für Stetigförderer (10-Jahres-Sicht).</h3>
+        <p>Energie, Verschleiß, Stillstand — mit Excel-Vorlage.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 14&nbsp;min</span><span><i class="ph ph-file"></i> 18 Seiten + XLSX</span></div>
+        <a class="more" href="#">Vorlage anfordern <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-file-pdf" aria-hidden="true"></i></div>
+        <span class="kc-tag">Branchen-Briefing</span>
+        <h3>Lebensmittel — Hygiene-Design und Reinigbarkeit.</h3>
+        <p>Edelstahl-Klasse, CIP/SIP-Tauglichkeit, Auditoren-Anforderungen.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 16&nbsp;min</span><span><i class="ph ph-file"></i> 22 Seiten</span></div>
+        <a class="more" href="#">Briefing anfordern <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+      <article class="kc-card">
+        <div class="kc-thumb"><span class="ph-pill">Cover-Platzhalter</span><i class="ph ph-file-pdf" aria-hidden="true"></i></div>
+        <span class="kc-tag">Case Study</span>
+        <h3>LKH Klagenfurt — 14 km automatische Krankenhauslogistik.</h3>
+        <p>750 Container, 61 fahrerlose Transportsysteme, unterirdisches Streckennetz.</p>
+        <div class="kc-meta"><span><i class="ph ph-clock"></i> 6&nbsp;min</span></div>
+        <a class="more" href="referenzen-lkh-klagenfurt.html">Case lesen <i class="ph-bold ph-arrow-right"></i></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-final" data-screen-label="05 Final CTA">
+  <div class="container row">
+    <div>
+      <span class="eb-on-dark">Sie wissen schon, was Sie brauchen?</span>
+      <h2>Skizzieren Sie Ihr Projekt — wir melden uns binnen 48&nbsp;Stunden.</h2>
+    </div>
+    <div class="row">
+      <a href="ihr-projekt.html" class="btn btn-on-dark btn-lg">Projekt skizzieren <i class="ph-bold ph-arrow-right"></i></a>
+      <a href="warum-klatt.html" class="btn btn-outline-light btn-lg">Warum KLATT</a>
+    </div>
+  </div>
+</section>
+
+<script>
+function filterKC(cat, btn) {
+  // update button styles
+  document.querySelectorAll('#kc-articles').forEach(() => {});
+  document.querySelectorAll('button[onclick^="filterKC"]').forEach(b => {
+    b.className = 'tag tag-line';
+  });
+  btn.className = 'tag tag-ink';
+
+  document.querySelectorAll('#kc-articles .kc-card').forEach(card => {
+    if (cat === 'all' || card.dataset.cat === cat) {
+      card.style.display = '';
+    } else {
+      card.style.display = 'none';
+    }
+  });
+}
+</script>
+<script>renderFooter();</script>
+</body>
+</html>

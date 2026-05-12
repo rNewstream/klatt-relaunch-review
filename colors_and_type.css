@@ -1,0 +1,303 @@
+/* =========================================================
+   HÖRMANN Klatt Conveyors — Colors & Type Tokens
+   Source of truth:
+     - Hoermann-Styleguide-Grundlagen-V2-Mai-2022.pdf (HÖRMANN Gruppe CD)
+     - HI_Prospekt_Klatt_web.pdf, hoermann-klatt.pdf, C-Paper-223001.pdf
+   ========================================================= */
+
+/* ---- Webfont -------------------------------------------------
+   The HÖRMANN styleguide specifies Karbon for Print/Web and
+   Calibri for Office. Karbon (by Process Type Foundry) is a
+   licensed typeface and is NOT installed in this project.
+   Substitution: Inter via Google Fonts — a near-metric match
+   for Karbon's geometric-industrial feel (geometric sans with
+   slightly squared terminals). Replace with the real Karbon
+   .otf files in fonts/ when a client license is available.
+   ----------------------------------------------------------- */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* ===========================================================
+     BRAND COLORS
+     =========================================================== */
+
+  /* --- HÖRMANN Red (the single brand accent) ---
+     Styleguide pg 5: Pantone 186 · CMYK 0/100/85/0 · #e4002b
+     Used as a precise accent — NEVER as a wash.             */
+  --hk-red:         #e4002b;   /* primary — logo, accents, 1+X layer */
+  --hk-red-deep:    #a8252b;   /* darker stop (CMYK 0/100/85/20) */
+
+  /* --- Anthracite / Ink ---
+     Klatt brochures use a very deep near-black for body & UI
+     chrome rather than pure black (warmer, less harsh).     */
+  --hk-ink:         #111418;   /* body text, dark surfaces */
+  --hk-ink-soft:    #2a2f36;   /* secondary text on light  */
+
+  /* --- Greyscale ramp (styleguide pg 5) ---
+     Used for data viz, dividers, info panels, surface tints. */
+  --hk-grey-05:     #f1f3f5;   /*  5% — subtle wash       */
+  --hk-grey-10:     #e6e7e9;   /* 13% — default surface   */
+  --hk-grey-25:     #ced1d4;   /* 25% — hairline / chip   */
+  --hk-grey-50:     #989ca0;   /* 50% — muted text        */
+  --hk-grey-75:     #565c60;   /* 75% — secondary chrome  */
+
+  /* --- Paper white ---                                       */
+  --hk-white:       #ffffff;
+
+  /* --- Hairlines ---                                         */
+  --hk-line:        rgba(17, 20, 24, 0.10);
+  --hk-line-soft:   rgba(17, 20, 24, 0.06);
+  --hk-line-strong: rgba(17, 20, 24, 0.22);
+
+  /* --- Overlay (for photography legibility) ---
+     HÖRMANN photography is "leicht entsättigt, kontrastreich,
+     technisch" — overlays stay cool/neutral, not warm.       */
+  --hk-overlay:     rgba(17, 20, 24, 0.55);
+  --hk-overlay-red: rgba(228, 0, 43, 0.85);   /* red Communication Layer */
+
+  /* ===========================================================
+     SEMANTIC TOKENS
+     =========================================================== */
+  --color-bg:            var(--hk-white);
+  --color-bg-alt:        var(--hk-grey-05);
+  --color-surface:       var(--hk-white);
+  --color-surface-muted: var(--hk-grey-10);
+  --color-surface-dark:  var(--hk-ink);
+
+  --color-fg:            var(--hk-ink);
+  --color-fg-muted:      var(--hk-grey-75);
+  --color-fg-subtle:     var(--hk-grey-50);
+  --color-fg-on-dark:    var(--hk-white);
+  --color-fg-on-red:     var(--hk-white);
+
+  --color-accent:        var(--hk-red);
+  --color-accent-deep:   var(--hk-red-deep);
+
+  --color-border:        var(--hk-line);
+  --color-border-soft:   var(--hk-line-soft);
+  --color-border-strong: var(--hk-line-strong);
+
+  /* ===========================================================
+     TYPE FAMILY
+     Karbon (licensed) → Inter (substitute)
+     =========================================================== */
+  --font-sans: "Inter", "Karbon", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: var(--font-sans);
+
+  /* Weights — Karbon ships Light/Regular/Semibold per styleguide
+     pg 10. We map those three plus Medium for UI chrome.     */
+  --fw-light:    300;   /* Karbon Light    */
+  --fw-regular:  400;   /* Karbon Regular  */
+  --fw-medium:   500;   /* UI chrome       */
+  --fw-semibold: 600;   /* Karbon Semibold */
+  --fw-bold:     700;   /* emphatic headlines */
+
+  /* ===========================================================
+     TYPE SCALE
+     The styleguide favors: "Moderne Typografie mit technischer
+     Anmutung" — large Semibold heads, thin short lines, plenty
+     of air. The Communication Layer title runs in SEMIBOLD at
+     ≥1× the image dimension (the 1:1+X principle).
+     =========================================================== */
+  --fs-display:   clamp(56px, 7vw, 112px);  /* Communication-Layer headline */
+  --fs-h1:        clamp(40px, 4.6vw, 72px);
+  --fs-h2:        clamp(30px, 3vw, 48px);
+  --fs-h3:        24px;
+  --fs-h4:        19px;
+  --fs-body-lg:   19px;
+  --fs-body:      16px;
+  --fs-body-sm:   14px;
+  --fs-caption:   12px;
+  --fs-eyebrow:   11px;   /* all caps, tracked */
+
+  --lh-tight:   1.04;
+  --lh-snug:    1.15;
+  --lh-normal:  1.4;
+  --lh-loose:   1.6;
+
+  --tracking-tight:  -0.018em;
+  --tracking-normal: 0;
+  --tracking-wide:   0.06em;
+  --tracking-caps:   0.14em;
+
+  /* ===========================================================
+     SPACING — 8-point grid
+     =========================================================== */
+  --space-1:  4px;
+  --space-2:  8px;
+  --space-3:  12px;
+  --space-4:  16px;
+  --space-5:  24px;
+  --space-6:  32px;
+  --space-7:  48px;
+  --space-8:  64px;
+  --space-9:  96px;
+  --space-10: 128px;
+
+  /* ===========================================================
+     RADII — industrial, not rounded
+     Styleguide imagery and layout uses sharp rectangles. We
+     permit a small radius on UI chrome for legibility only.
+     =========================================================== */
+  --radius-none: 0;
+  --radius-xs:   2px;
+  --radius-sm:   4px;
+  --radius-md:   6px;      /* default UI — buttons, inputs */
+  --radius-lg:   10px;
+  --radius-xl:   16px;     /* largest; cards occasionally   */
+  --radius-pill: 999px;    /* chips & status pills only     */
+
+  /* ===========================================================
+     SHADOWS — cool, technical
+     =========================================================== */
+  --shadow-xs: 0 1px 2px rgba(17, 20, 24, 0.06);
+  --shadow-sm: 0 2px 6px rgba(17, 20, 24, 0.06), 0 1px 2px rgba(17, 20, 24, 0.04);
+  --shadow-md: 0 8px 24px -10px rgba(17, 20, 24, 0.18), 0 2px 6px rgba(17, 20, 24, 0.06);
+  --shadow-lg: 0 24px 60px -24px rgba(17, 20, 24, 0.28), 0 4px 10px rgba(17, 20, 24, 0.06);
+
+  /* ===========================================================
+     MOTION — decisive, short, no overshoot
+     =========================================================== */
+  --ease-out:     cubic-bezier(.2,.7,.2,1);
+  --ease-in-out:  cubic-bezier(.65,.05,.36,1);
+  --dur-fast:     120ms;
+  --dur-base:     220ms;
+  --dur-slow:     420ms;
+}
+
+/* =========================================================
+   BASE ELEMENT DEFAULTS
+   ========================================================= */
+html, body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-sans);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-body);
+  line-height: var(--lh-normal);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+h1, .h1 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-h1);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+  margin: 0;
+  text-wrap: balance;
+}
+
+h2, .h2 {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-h2);
+  line-height: var(--lh-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+  margin: 0;
+  text-wrap: balance;
+}
+
+h3, .h3 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-h3);
+  line-height: var(--lh-snug);
+  letter-spacing: -0.01em;
+  color: var(--color-fg);
+  margin: 0;
+}
+
+h4, .h4 {
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-h4);
+  line-height: var(--lh-snug);
+  color: var(--color-fg);
+  margin: 0;
+}
+
+.display {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+}
+
+p, .body {
+  font-size: var(--fs-body);
+  line-height: var(--lh-loose);
+  font-weight: var(--fw-regular);
+  color: var(--color-fg);
+  max-width: 68ch;
+  text-wrap: pretty;
+  margin: 0 0 1em 0;
+}
+
+.body-lg { font-size: var(--fs-body-lg); line-height: var(--lh-loose); }
+.body-sm { font-size: var(--fs-body-sm); line-height: var(--lh-normal); }
+
+.caption {
+  font-size: var(--fs-caption);
+  color: var(--color-fg-muted);
+  letter-spacing: 0;
+}
+
+.eyebrow {
+  font-size: var(--fs-eyebrow);
+  font-weight: var(--fw-medium);
+  text-transform: uppercase;
+  letter-spacing: var(--tracking-caps);
+  color: var(--hk-red);
+}
+
+a {
+  color: var(--hk-ink);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 3px;
+  text-decoration-color: var(--hk-red);
+  transition: color var(--dur-fast) var(--ease-out),
+              text-decoration-color var(--dur-fast) var(--ease-out);
+}
+a:hover { color: var(--hk-red); }
+
+hr {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+  margin: var(--space-6) 0;
+}
+
+::selection { background: var(--hk-red); color: var(--hk-white); }
+
+/* =========================================================
+   COMMUNICATION LAYER — the 1:1+X headline block
+   The HÖRMANN Gruppe's signature layout device. A solid red
+   (or white) block sits on a photograph; its area is 1+X
+   relative to the image area of 1. Headline set Semibold,
+   left-aligned, big.
+   ========================================================= */
+.comm-layer {
+  display: inline-block;
+  padding: var(--space-6) var(--space-7);
+  background: var(--hk-red);
+  color: var(--hk-white);
+  max-width: 680px;
+}
+.comm-layer .comm-title {
+  font-family: var(--font-display);
+  font-weight: var(--fw-semibold);
+  font-size: var(--fs-display);
+  line-height: var(--lh-tight);
+  letter-spacing: var(--tracking-tight);
+}
+.comm-layer .comm-sub {
+  margin-top: var(--space-3);
+  font-weight: var(--fw-light);
+  font-size: var(--fs-body-lg);
+  line-height: var(--lh-normal);
+  opacity: .92;
+}
